@@ -30,10 +30,11 @@ userKm = KM scelti dall'utente
 
 let finalPrice = "";
 const priceKm = 0.21;
-const ageJunior = 18;
+let ageJunior = 18;
 let discountJunior = 20;
-const ageSenior = 65;
-const discountSenior = 40;
+let ageSenior = 65;
+let discountSenior = 40;
+
 
 let userKm = parseInt(prompt("Quanti km vuoi percorrere?"));
 
@@ -45,11 +46,18 @@ let age = parseInt(prompt("Quanti anni hai?"))
 
 if (age < ageJunior) {
 
-    discountJunior = priceKm * 20 / 100;
+    discountJunior = userKmBasic * 20 / 100;
     finalPrice = userKmBasic - discountJunior;
+
+} else if (age > ageSenior) {
+
+    discountSenior = tariffa * 40 / 100;
+    finalPrice = userKmBasic - discountSenior;
 }
 
 console.log("Il prezzo del biglietto è di " + finalPrice.toFixed(2));
+
+
 
 
 
