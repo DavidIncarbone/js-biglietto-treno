@@ -52,14 +52,14 @@ let age = parseInt(prompt("Quanti anni hai?"))
 
 if (age < ageJunior) {
 
-    discountJunior = userKmBasic * 20 / 100;
+    discountJunior = userKmBasic * discountJunior / 100;
     finalPrice = userKmBasic - discountJunior;
     console.log("Il prezzo del biglietto è di " + finalPrice.toFixed(2) + "€");
     window.alert("Il prezzo del biglietto è di " + finalPrice.toFixed(2) + "€");
 
 } else if (age > ageSenior) {
 
-    discountSenior = userKmBasic * 40 / 100;
+    discountSenior = userKmBasic * discountSenior / 100;
     finalPrice = userKmBasic - discountSenior;
     console.log("Il prezzo del biglietto è di " + finalPrice.toFixed(2) + "€");
     window.alert("Il prezzo del biglietto è di " + finalPrice.toFixed(2) + "€");
