@@ -22,12 +22,17 @@ discountJunior = sconto under 18
 ageSenior = utente over 65
 discountSenior = sconto over 65
 priceKm = tariffa fissa KM
-userKM = KM scelti dall'utente
+userKm = KM scelti dall'utente
 
 */
 
+
+let finalPrice = "";
 const priceKM = 0.21;
 const ageJunior = 18;
 const discountJunior = 20;
 const ageSenior = 65;
 const discountSenior = 40;
+let userAge = parseInt(prompt("Quanti anni hai?"));
+let userKm = parseInt(prompt("Quanti km vuoi percorrere?"));
+
